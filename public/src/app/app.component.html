@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <div style="text-align:center">
-  <h1>
+  <h1 class = "title">
     Welcome to Trading Simulator!
   </h1>
 
@@ -16,30 +17,30 @@
 
 <div class = "LoginContainer">
   <form (submit) = "LoginUser()">
-    <h2>Login User</h2>
-    <label>Email: </label>
-    <input type='text' name='getUser.email' [(ngModel)] = "getUser.email"><br>
-    <label>Password: </label>
-    <input type='password' name='getUser.password' [(ngModel)] = "getUser.password"><br>
+    <h2>Login</h2>
+    <label>Email: <br><input type='text' name='getUser.email' [(ngModel)] = "getUser.email"></label>
+    <br>
+    <label>Password: <br><input type='password' name='getUser.password' [(ngModel)] = "getUser.password"></label>
+    <br>
     <button>Submit</button>
   </form>
 </div>
 <div class="CreateContainer">
   <form (submit) = "CreateUser()">
-      <h2>Create User</h2>
-      <label>First Name: </label>
-      <input type='text' name='newUser.first_name' [(ngModel)] = "newUser.first_name"><br>
-      <label>Last Name: </label>
-      <input type='text' name='newUser.last_name' [(ngModel)] = "newUser.last_name"><br>
-      <label>Email: </label>
-      <input type='email' name='newUser.email' [(ngModel)] = "newUser.email"><br>
-      <label>Password: </label>
-      <input type='password' name='newUser.password' [(ngModel)] = "newUser.password"><br>
+      <h2>Registration</h2>
+      <label>First Name: <br><input type='text' name='newUser.first_name' [(ngModel)] = "newUser.first_name"> </label>
+      <br>
+      <label>Last Name: <br><input type='text' name='newUser.last_name' [(ngModel)] = "newUser.last_name"> </label>
+      <br>
+      <label>Email: <br><input type='email' name='newUser.email' [(ngModel)] = "newUser.email"> </label>
+      <br>
+      <label>Password: <br><input type='password' name='newUser.password' [(ngModel)] = "newUser.password"></label>
+      <br>
       <button>Submit</button>
   </form>
 </div>
 
-<h2>Hello {{currentUser.first_name}}!</h2>
+<h2 class = "intro">Hello {{currentUser.first_name}}!</h2>
 
 <button (submit) = "logout()">Log Out</button>
 

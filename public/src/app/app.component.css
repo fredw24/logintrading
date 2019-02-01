@@ -2,7 +2,14 @@
 
     display: inline-block;
     vertical-align: top;
+    padding-right: 100px;
+    text-align: left;
 }
 .CreateContainer{
     display: inline-block;
+    text-align:  left;
 }
+
+
+
+
